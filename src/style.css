@@ -522,3 +522,180 @@
   font-weight: bold;
   color: #f5a623;
 }
+/* PAGE TITLE */
+.buy-title {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f0f0f0; /* light gray background */
+  color: #333;
+}
+
+.buy-logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.buy-title h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.buy-title p {
+  font-size: 18px;
+  color: #666;
+}
+
+/* FILTERS */
+.buy-filters {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.buy-filters select {
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+/* CAR GRID */
+.buy-cars {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+}
+
+.cars-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+/* CAR CARD */
+.car-card {
+  background-color: #fff;
+  border-radius: 10px;
+  width: 220px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+.car-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+.car-img-wrapper {
+  position: relative;
+}
+
+.car-img-wrapper img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.car-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(21, 19, 17, 0.8); /* overlay with price highlight */
+  color: #fff;
+  padding: 5px;
+  text-align: center;
+}
+
+.car-card h3 {
+  font-size: 20px;
+  margin: 10px 0;
+  color: #333;
+}
+
+.car-price {
+  font-weight: bold;
+  font-size: 16px;
+}
+/* LOGIN PAGE SECTION */
+.login-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  background-color: #f4f4f4;
+  padding: 50px 20px;
+}
+
+.login-container {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+.login-logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.login-container h2 {
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.login-form input {
+  padding: 12px 15px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.login-form button {
+  padding: 12px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f5a623;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-form button:hover {
+  background-color: #d18e1f;
+}
+
+.login-note {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+.login-note a {
+  color: #f5a623;
+  text-decoration: none;
+}
+
+.login-note a:hover {
+  text-decoration: underline;
+}
