@@ -698,4 +698,76 @@
 
 .login-note a:hover {
   text-decoration: underline;
+}/* FULL DARK BOOKING PAGE */
+.booking-section-dark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 60px); /* account for small navbar */
+  background-color: #121212;
+  padding: 20px;
+}
+
+.booking-container-dark {
+  background-color: #1f1f1f;
+  padding: 50px 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 25px rgba(0,0,0,0.7);
+  text-align: center;
+  max-width: 450px;
+  width: 100%;
+}
+
+.booking-logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.booking-container-dark h2 {
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: #fff;
+}
+
+.booking-form-dark {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.booking-form-dark input {
+  padding: 12px 15px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  background-color: #2b2b2b;
+  color: #fff;
+}
+
+.booking-form-dark input::placeholder {
+  color: #aaa;
+}
+
+.booking-form-dark button {
+  padding: 15px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f5a623;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.booking-form-dark button:hover {
+  background-color: #d18e1f;
+}
+
+.booking-note-dark {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #ccc;
 }
