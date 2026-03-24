@@ -74,42 +74,74 @@ body{
 }
 
 .hero-bg-1 {
-  animation: slideshow 24s infinite;
+  animation: slideshow 48s infinite;
 }
 
 .hero-bg-2 {
-  animation: slideshow 24s infinite 3s;
+  animation: slideshow 48s infinite 3s;
 }
 
 .hero-bg-3 {
-  animation: slideshow 24s infinite 6s;
+  animation: slideshow 48s infinite 6s;
 }
 
 .hero-bg-4 {
-  animation: slideshow 24s infinite 9s;
+  animation: slideshow 48s infinite 9s;
 }
 
 .hero-bg-5 {
-  animation: slideshow 24s infinite 12s;
+  animation: slideshow 48s infinite 12s;
 }
 
 .hero-bg-6 {
-  animation: slideshow 24s infinite 15s;
+  animation: slideshow 48s infinite 15s;
 }
 
 .hero-bg-7 {
-  animation: slideshow 24s infinite 18s;
+  animation: slideshow 48s infinite 18s;
 }
 
 .hero-bg-8 {
-  animation: slideshow 24s infinite 21s;
+  animation: slideshow 48s infinite 21s;
+}
+
+.hero-bg-9 {
+  animation: slideshow 48s infinite 24s;
+}
+
+.hero-bg-10 {
+  animation: slideshow 48s infinite 27s;
+}
+
+.hero-bg-11 {
+  animation: slideshow 48s infinite 30s;
+}
+
+.hero-bg-12 {
+  animation: slideshow 48s infinite 33s;
+}
+
+.hero-bg-13 {
+  animation: slideshow 48s infinite 36s;
+}
+
+.hero-bg-14 {
+  animation: slideshow 48s infinite 39s;
+}
+
+.hero-bg-15 {
+  animation: slideshow 48s infinite 42s;
+}
+
+.hero-bg-16 {
+  animation: slideshow 48s infinite 45s;
 }
 
 @keyframes slideshow {
   0% { opacity: 0; }
-  2% { opacity: 1; }
-  12.5% { opacity: 1; }
-  14.5% { opacity: 0; }
+  1% { opacity: 1; }
+  5% { opacity: 1; }
+  6% { opacity: 0; }
   100% { opacity: 0; }
 }
 
@@ -513,34 +545,98 @@ body{
 }
 
 .about-bg-1 {
-  animation: slideshow 24s infinite;
+  animation: slideshow 48s infinite;
 }
 
 .about-bg-2 {
-  animation: slideshow 24s infinite 3s;
+  animation: slideshow 48s infinite 3s;
 }
 
 .about-bg-3 {
-  animation: slideshow 24s infinite 6s;
+  animation: slideshow 48s infinite 6s;
 }
 
 .about-bg-4 {
-  animation: slideshow 24s infinite 9s;
+  animation: slideshow 48s infinite 9s;
 }
 
 .about-bg-5 {
-  animation: slideshow 24s infinite 12s;
+  animation: slideshow 48s infinite 12s;
 }
 
 .about-bg-6 {
-  animation: slideshow 24s infinite 15s;
+  animation: slideshow 48s infinite 15s;
 }
 
 .about-bg-7 {
-  animation: slideshow 24s infinite 18s;
+  animation: slideshow 48s infinite 18s;
 }
 
 .about-bg-8 {
+  animation: slideshow 48s infinite 21s;
+}
+
+.about-bg-9 {
+  animation: slideshow 48s infinite 24s;
+}
+
+.about-bg-10 {
+  animation: slideshow 48s infinite 27s;
+}
+
+.about-bg-11 {
+  animation: slideshow 48s infinite 30s;
+}
+
+.about-bg-12 {
+  animation: slideshow 48s infinite 33s;
+}
+
+.about-bg-13 {
+  animation: slideshow 48s infinite 36s;
+}
+
+.about-bg-14 {
+  animation: slideshow 48s infinite 39s;
+}
+
+.about-bg-15 {
+  animation: slideshow 48s infinite 42s;
+}
+
+.about-bg-16 {
+  animation: slideshow 48s infinite 45s;
+}
+
+.contact-bg-1 {
+  animation: slideshow 24s infinite;
+}
+
+.contact-bg-2 {
+  animation: slideshow 24s infinite 3s;
+}
+
+.contact-bg-3 {
+  animation: slideshow 24s infinite 6s;
+}
+
+.contact-bg-4 {
+  animation: slideshow 24s infinite 9s;
+}
+
+.contact-bg-5 {
+  animation: slideshow 24s infinite 12s;
+}
+
+.contact-bg-6 {
+  animation: slideshow 24s infinite 15s;
+}
+
+.contact-bg-7 {
+  animation: slideshow 24s infinite 18s;
+}
+
+.contact-bg-8 {
   animation: slideshow 24s infinite 21s;
 }
 
@@ -2137,4 +2233,28 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
+}
+
+/* ANIMATIONS FOR OTHER PAGES */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-out;
+}
+
+.animate-fade-in-delay-1 {
+  animation: fadeIn 1s ease-out 0.2s both;
+}
+
+.animate-fade-in-delay-2 {
+  animation: fadeIn 1s ease-out 0.4s both;
 }
