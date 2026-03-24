@@ -9,24 +9,33 @@
 <body>
 
 <!-- NAVBAR -->
-<header>
-  <nav class="navbar">
-    <img src="../images/other erny.jpg" alt="Logo" class="logo-img-circle">
-    <h2 class="logo-text">ERNY AUTO GROUP</h2>
+<header class="navbar">
+  <div class="logo-container">
+    <img src="../images/other erny.jpg" class="logo-img" alt="Erny Auto Groups">
+    <h2>Erny Auto Groups</h2>
+  </div>
 
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="buy.html">Buy</a></li>
-      <li><a href="sell.html">Sell</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
+  <ul class="nav-links">
+    <li><a href="index.html" class="nav-link">Home</a></li>
+    <li><a href="about.html" class="nav-link">About</a></li>
+    <li><a href="buy.html" class="nav-link">Buy</a></li>
+    <li><a href="sell.html" class="nav-link">Sell</a></li>
+    <li><a href="bookings.html" class="nav-link">Bookings</a></li>
+    <li><a href="FAQs.html" class="nav-link">FAQ</a></li>
+    <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+    <li><a href="contact.html" class="nav-link">Contact</a></li>
+    <li><a href="settings.html" class="nav-link">Settings</a></li>    <li><a href="terms.html" class="nav-link">Terms</a></li>  </ul>
 
-    <div class="auth">
-      <a href="login.html">Login</a>
-      <a href="#">Sign up</a>
-    </div>
-  </nav>
+  <div class="auth">
+    <a href="login.html">Login</a>
+    <a href="sign up.html" class="signup">Sign Up</a>
+  </div>
+
+  <div class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
 </header>
 
 <!-- LOGIN FORM SECTION -->
@@ -39,10 +48,13 @@
       <input type="password" name="password" placeholder="Password" required>
       <button type="submit">Login</button>
     </form>
-    <p class="login-note">Don't have an account? <a href="#">Sign up here</a></p>
+    <p class="login-note">Don't have an account? <a href="sign up.html">Sign up here</a></p>
   </div>
 </section>
 
-<script src="js/script.js"></script>
+<script src="../src/script.jss"></script>
 </body>
 </html>
+
+
+
