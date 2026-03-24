@@ -8,114 +8,312 @@
 </head>
 <body>
 
-<!-- NAVBAR -->
-<header>
-  <nav class="navbar">
-    <img src="../images/other erny.jpg" alt="Logo" class="logo-img-circle">
-    <h2 class="logo-text">ERNY AUTO GROUP</h2>
-
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="buy.html">Buy</a></li>
-      <li><a href="sell.html">Sell</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-       <li><a href="login.html">Login</a></li>
-    </ul>
-
-    <div class="auth">
-      <a href="#">Login</a>
-      <a href="#">Sign up</a>
+<!-- SIDE PANEL -->
+<div id="side-panel" class="side-panel">
+  <div class="side-panel-header">
+    <h3>Settings</h3>
+    <button id="close-panel" class="close-btn">&times;</button>
+  </div>
+  <div class="side-panel-content">
+    <div class="panel-section">
+      <h4>Quick Filters</h4>
+      <div class="filter-option">
+        <label for="panel-brand">Brand:</label>
+        <select id="panel-brand">
+          <option>All</option>
+          <option>Toyota</option>
+          <option>BMW</option>
+          <option>Mercedes</option>
+        </select>
+      </div>
+      <div class="filter-option">
+        <label for="panel-price">Price Range:</label>
+        <select id="panel-price">
+          <option>All</option>
+          <option>Under $30k</option>
+          <option>$30k - $50k</option>
+          <option>Over $50k</option>
+        </select>
+      </div>
     </div>
-  </nav>
+    <div class="panel-section">
+      <h4>Preferences</h4>
+      <div class="preference-option">
+        <input type="checkbox" id="dark-mode">
+        <label for="dark-mode">Dark Mode</label>
+      </div>
+      <div class="preference-option">
+        <input type="checkbox" id="notifications">
+        <label for="notifications">Enable Notifications</label>
+      </div>
+    </div>
+    <div class="panel-section">
+      <h4>Account</h4>
+      <button class="panel-btn">Login</button>
+      <button class="panel-btn">Sign Up</button>
+    </div>
+  </div>
+</div>
+
+<!-- SIDE PANEL TOGGLE -->
+<button id="panel-toggle" class="panel-toggle">
+  <i class="fas fa-cog"></i>
+</button>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="logo-container">
+    <img src="../images/other erny.jpg" class="logo-img" alt="Erny Auto Group">
+    <h2>Erny Auto Group</h2>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="index.html" class="nav-link">Home</a></li>
+    <li><a href="about.html" class="nav-link">About</a></li>
+    <li><a href="buy.html" class="nav-link active">Buy</a></li>
+    <li><a href="sell.html" class="nav-link">Sell</a></li>
+    <li><a href="bookings.html" class="nav-link">Bookings</a></li>
+    <li><a href="FAQs.html" class="nav-link">FAQ</a></li>
+    <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+    <li><a href="contact.html" class="nav-link">Contact</a></li>
+    <li><a href="settings.html" class="nav-link">Settings</a></li>
+  </ul>
+
+  <div class="auth">
+    <a href="login.html">Login</a>
+    <a href="sign up.html" class="signup">Sign Up</a>
+  </div>
+
+  <div class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
 </header>
 
 <!-- PAGE TITLE -->
 <section class="buy-title">
-  <img src="../images/other erny.jpg" alt="Logo" class="buy-logo">
-  <h1>Find Your Perfect Car</h1>
-  <p>Browse our modern selection of vehicles</p>
-</section>
-
-<!-- FILTERS -->
-<section class="buy-filters">
-  <select>
-    <option value="">Make</option>
-    <option>Toyota</option>
-    <option>Honda</option>
-    <option>BMW</option>
-    <option>Mercedes</option>
-  </select>
-  <select>
-    <option value="">Model</option>
-    <option>Corolla</option>
-    <option>Civic</option>
-    <option>X5</option>
-    <option>C-Class</option>
-  </select>
-  <select>
-    <option value="">Year</option>
-    <option>2025</option>
-    <option>2024</option>
-    <option>2023</option>
-    <option>2022</option>
-  </select>
-</section>
-
-<!-- BUY CAR GRID -->
-<section class="buy-cars">
   <div class="container">
-    <div class="cars-grid">
-      <div class="car-card">
-        <div class="car-img-wrapper">
-          <img src="../images/2025-mercedes-amg-s63-e-performance-101-67d450db7d124.jpeg" alt="Toyota Corolla">
-          <div class="car-overlay">
-            <p class="car-price">$20,000</p>
-          </div>
-        </div>
-        <h3>Toyota Corolla</h3>
-      </div>
-      <div class="car-card">
-        <div class="car-img-wrapper">
-          <img src="../images/blue car.jpg" alt="Honda Civic">
-          <div class="car-overlay">
-            <p class="car-price">$22,500</p>
-          </div>
-        </div>
-        <h3>Honda Civic</h3>
-      </div>
-      <div class="car-card">
-        <div class="car-img-wrapper">
-          <img src="../images/bmw.jpg" alt="BMW X5">
-          <div class="car-overlay">
-            <p class="car-price">$55,000</p>
-          </div>
-        </div>
-        <h3>BMW X5</h3>
-      </div>
-      <div class="car-card">
-        <div class="car-img-wrapper">
-          <img src="../images/cadillac.jpg" alt="Mercedes C-Class">
-          <div class="car-overlay">
-            <p class="car-price">$48,000</p>
-          </div>
-        </div>
-        <h3>Mercedes C-Class</h3>
-      </div>
-      <div class="car-card">
-        <div class="car-img-wrapper">
-          <img src="../images/car photo.jpg" alt="Audi A4">
-          <div class="car-overlay">
-            <p class="car-price">$50,000</p>
-          </div>
-        </div>
-        <h3>Audi A4</h3>
-      </div>
-      <!-- Add more cards as needed -->
+    <img src="../images/other erny.jpg" alt="Erny Auto Group" class="buy-logo">
+    <h1>Find Your Perfect Car</h1>
+    <p>Browse our modern selection of vehicles</p>
+  </div>
+</section>
+
+<!-- SEARCH AND FILTERS -->
+<section class="search-filters">
+  <div class="container">
+    <div class="search-bar">
+      <input type="text" id="search-input" placeholder="Search by make, model, or keyword...">
+      <button id="search-btn">Search</button>
+    </div>
+
+    <div class="filters">
+      <select id="brand-filter">
+        <option value="">All Brands</option>
+        <option>Toyota</option>
+        <option>BMW</option>
+        <option>Mercedes</option>
+        <option>Audi</option>
+        <option>Ford</option>
+        <option>Honda</option>
+      </select>
+      <select id="price-filter">
+        <option value="">All Prices</option>
+        <option>Under $20,000</option>
+        <option>$20,000 - $40,000</option>
+        <option>$40,000 - $60,000</option>
+        <option>Over $60,000</option>
+      </select>
+      <select id="type-filter">
+        <option value="">All Types</option>
+        <option>Sedan</option>
+        <option>SUV</option>
+        <option>Truck</option>
+        <option>Sports Car</option>
+        <option>Luxury</option>
+      </select>
+      <button id="apply-filters">Apply Filters</button>
     </div>
   </div>
 </section>
 
-<script src="js/script.js"></script>
+<!-- CAR LISTINGS -->
+<section class="car-listings">
+  <div class="container">
+    <div class="cars-grid" id="cars-grid">
+      <!-- Car 1 -->
+      <div class="car-card" data-brand="BMW" data-price="45000" data-type="SUV">
+        <div class="car-img-wrapper">
+          <img src="../images/okayy.jpg" alt="BMW X5">
+          <div class="car-overlay">
+            <p class="car-price">$45,000</p>
+          </div>
+        </div>
+        <div class="car-info">
+          <h3>BMW X5</h3>
+          <p class="car-desc">Luxury SUV with advanced features, premium comfort, and excellent safety ratings.</p>
+          <div class="car-details">
+            <span>2022</span>
+            <span>25,000 miles</span>
+            <span>AWD</span>
+          </div>
+          <a href="#" class="btn">View Details</a>
+        </div>
+      </div>
+
+      <!-- Car 2 -->
+      <div class="car-card" data-brand="Mercedes" data-price="38500" data-type="Sedan">
+        <div class="car-img-wrapper">
+          <img src="../images/cadillac.jpg" alt="Mercedes C-Class">
+          <div class="car-overlay">
+            <p class="car-price">$38,500</p>
+          </div>
+        </div>
+        <div class="car-info">
+          <h3>Mercedes C-Class</h3>
+          <p class="car-desc">Elegant sedan with cutting-edge technology, superior comfort, and top-tier safety.</p>
+          <div class="car-details">
+            <span>2021</span>
+            <span>18,500 miles</span>
+            <span>RWD</span>
+          </div>
+          <a href="#" class="btn">View Details</a>
+        </div>
+      </div>
+
+      <!-- Car 3 -->
+      <div class="car-card" data-brand="Audi" data-price="35750" data-type="Sedan">
+        <div class="car-img-wrapper">
+          <img src="../images/car photo.jpg21" alt="Audi A4">
+          <div class="car-overlay">
+            <p class="car-price">$35,750</p>
+          </div>
+        </div>
+        <div class="car-info">
+          <h3>Audi A4</h3>
+          <p class="car-desc">Sporty performance with Audi's signature design and innovative tech features.</p>
+          <div class="car-details">
+            <span>2020</span>
+            <span>22,000 miles</span>
+            <span>AWD</span>
+          </div>
+          <a href="#" class="btn">View Details</a>
+        </div>
+      </div>
+
+      <!-- Car 4 -->
+      <div class="car-card" data-brand="Ford" data-price="42000" data-type="Sports Car">
+        <div class="car-img-wrapper">
+          <img src="../images/ford.jpg" alt="Ford Mustang">
+          <div class="car-overlay">
+            <p class="car-price">$42,000</p>
+          </div>
+        </div>
+        <div class="car-info">
+          <h3>Ford Mustang</h3>
+          <p class="car-desc">Iconic American muscle car with modern upgrades and thrilling performance.</p>
+          <div class="car-details">
+            <span>2023</span>
+            <span>5,000 miles</span>
+            <span>RWD</span>
+          </div>
+          <a href="#" class="btn">View Details</a>
+        </div>
+      </div>
+
+      <!-- Car 5 -->
+      <div class="car-card" data-brand="Toyota" data-price="28500" data-type="SUV">
+        <div class="car-img-wrapper">
+          <img src="../images/2025-mercedes-amg-s63-e-performance-101-67d450db7d124.jpeg" alt="Toyota RAV4">
+          <div class="car-overlay">
+            <p class="car-price">$28,500</p>
+          </div>
+        </div>
+        <div class="car-info">
+          <h3>Toyota RAV4</h3>
+          <p class="car-desc">Reliable compact SUV with excellent fuel efficiency and family-friendly features.</p>
+          <div class="car-details">
+            <span>2022</span>
+            <span>15,000 miles</span>
+            <span>AWD</span>
+          </div>
+          <a href="#" class="btn">View Details</a>
+        </div>
+      </div>
+
+      <!-- Car 6 -->
+      <div class="car-card" data-brand="Honda" data-price="32000" data-type="Sedan">
+        <div class="car-img-wrapper">
+          <img src="../images/blue car.jpg" alt="Honda Accord">
+          <div class="car-overlay">
+            <p class="car-price">$32,000</p>
+          </div>
+        </div>
+        <div class="car-info">
+          <h3>Honda Accord</h3>
+          <p class="car-desc">Comfortable and reliable sedan with advanced safety features and smooth ride.</p>
+          <div class="car-details">
+            <span>2021</span>
+            <span>20,000 miles</span>
+            <span>FWD</span>
+          </div>
+          <a href="#" class="btn">View Details</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-container">
+    <!-- LOGO + ABOUT -->
+    <div class="footer-box brand">
+      <div class="footer-logo">
+        <img src="../images/other erny.jpg" alt="logo">
+      </div>
+      <h2>Erny Auto Groups</h2>
+      <p>Your trusted marketplace for buying and selling cars with confidence.</p>
+    </div>
+
+    <!-- LINKS -->
+    <div class="footer-box">
+      <h3>Quick Links</h3>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="buy.html">Buy</a>
+      <a href="sell.html">Sell</a>
+      <a href="bookings.html">Bookings</a>
+      <a href="FAQs.html">FAQs</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="contact.html">Contact</a>
+      <a href="settings.html">Settings</a>
+    </div>
+
+    <!-- SERVICES -->
+    <div class="footer-box">
+      <h3>Services</h3>
+      <a href="#">Car Sales</a>
+      <a href="#">Car Rentals</a>
+      <a href="#">Financing</a>
+      <a href="#">Inspection</a>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="footer-box">
+      <h3>Contact</h3>
+      <p><i class="fa-solid fa-location-dot"></i> Accra, Ghana</p>
+      <p><i class="fa-solid fa-phone"></i> +233 000 000 000</p>
+      <p><i class="fa-solid fa-envelope"></i> info@ernyauto.com</p>
+    </div>
+  </div>
+
+  <!-- BOTTOM -->
+  <div class="footer-bottom">
+    <p>© 2026 Erny Auto Group. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="../src/script.js"></script>
 </body>
 </html>

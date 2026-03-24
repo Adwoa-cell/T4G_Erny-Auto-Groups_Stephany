@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FAQs - Erny Auto Group</title>
+<title>Settings - Erny Auto Group</title>
 <link rel="stylesheet" href="../src/style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
@@ -22,10 +22,10 @@
     <li><a href="buy.html" class="nav-link">Buy</a></li>
     <li><a href="sell.html" class="nav-link">Sell</a></li>
     <li><a href="bookings.html" class="nav-link">Bookings</a></li>
-    <li><a href="FAQs.html" class="nav-link active">FAQ</a></li>
+    <li><a href="FAQs.html" class="nav-link">FAQ</a></li>
     <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
     <li><a href="contact.html" class="nav-link">Contact</a></li>
-    <li><a href="settings.html" class="nav-link">Settings</a></li>
+    <li><a href="settings.html" class="nav-link active">Settings</a></li>
   </ul>
 
   <div class="auth">
@@ -40,64 +40,76 @@
   </div>
 </header>
 
-<!-- FAQ SECTION -->
-<section class="faq-section">
+<!-- SETTINGS SECTION -->
+<section class="settings-section">
   <div class="container">
-    <h1>Frequently Asked Questions</h1>
-    <div class="faq-container">
-      <div class="faq-item">
-        <div class="faq-question">
-          <h3>What types of vehicles do you offer?</h3>
-          <i class="fas fa-plus"></i>
+    <h1>Settings</h1>
+    <div class="settings-content">
+      <div class="setting-group">
+        <h2>Account Settings</h2>
+        <div class="setting-item">
+          <label for="username">Username:</label>
+          <input type="text" id="username" placeholder="Enter your username">
         </div>
-        <div class="faq-answer">
-          <p>We offer a wide range of vehicles including sedans, SUVs, trucks, luxury cars, and electric vehicles from top brands like Toyota, BMW, Mercedes, and more.</p>
+        <div class="setting-item">
+          <label for="email">Email:</label>
+          <input type="email" id="email" placeholder="Enter your email">
         </div>
+        <div class="setting-item">
+          <label for="password">Change Password:</label>
+          <input type="password" id="password" placeholder="New password">
+        </div>
+        <button class="save-btn">Save Changes</button>
       </div>
-      <div class="faq-item">
-        <div class="faq-question">
-          <h3>How do I sell my car?</h3>
-          <i class="fas fa-plus"></i>
+
+      <div class="setting-group">
+        <h2>Notification Preferences</h2>
+        <div class="setting-item">
+          <input type="checkbox" id="email-notif" checked>
+          <label for="email-notif">Email Notifications</label>
         </div>
-        <div class="faq-answer">
-          <p>To sell your car, contact us through our website or visit our showroom. We'll provide a free appraisal and guide you through the process.</p>
+        <div class="setting-item">
+          <input type="checkbox" id="sms-notif">
+          <label for="sms-notif">SMS Notifications</label>
         </div>
+        <div class="setting-item">
+          <input type="checkbox" id="promo-notif" checked>
+          <label for="promo-notif">Promotional Emails</label>
+        </div>
+        <button class="save-btn">Update Preferences</button>
       </div>
-      <div class="faq-item">
-        <div class="faq-question">
-          <h3>Do you offer financing options?</h3>
-          <i class="fas fa-plus"></i>
+
+      <div class="setting-group">
+        <h2>Privacy Settings</h2>
+        <div class="setting-item">
+          <input type="checkbox" id="profile-public">
+          <label for="profile-public">Make profile public</label>
         </div>
-        <div class="faq-answer">
-          <p>Yes, we partner with leading financial institutions to offer flexible financing options tailored to your needs.</p>
+        <div class="setting-item">
+          <input type="checkbox" id="data-sharing" checked>
+          <label for="data-sharing">Allow data sharing for better services</label>
         </div>
+        <button class="save-btn">Save Privacy Settings</button>
       </div>
-      <div class="faq-item">
-        <div class="faq-question">
-          <h3>What is your return policy?</h3>
-          <i class="fas fa-plus"></i>
+
+      <div class="setting-group">
+        <h2>Site Preferences</h2>
+        <div class="setting-item">
+          <label for="language">Language:</label>
+          <select id="language">
+            <option>English</option>
+            <option>French</option>
+            <option>Spanish</option>
+          </select>
         </div>
-        <div class="faq-answer">
-          <p>We offer a 7-day return policy on all purchases, subject to vehicle inspection and mileage limits.</p>
+        <div class="setting-item">
+          <label for="theme">Theme:</label>
+          <select id="theme">
+            <option>Light</option>
+            <option>Dark</option>
+          </select>
         </div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-question">
-          <h3>Do you provide vehicle inspections?</h3>
-          <i class="fas fa-plus"></i>
-        </div>
-        <div class="faq-answer">
-          <p>Yes, all our vehicles undergo thorough inspections before sale. We also offer pre-purchase inspections for buyers.</p>
-        </div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-question">
-          <h3>How can I book a test drive?</h3>
-          <i class="fas fa-plus"></i>
-        </div>
-        <div class="faq-answer">
-          <p>You can book a test drive through our website's booking page or by contacting us directly.</p>
-        </div>
+        <button class="save-btn">Apply Preferences</button>
       </div>
     </div>
   </div>

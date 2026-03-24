@@ -14,37 +14,97 @@
 
 <body>
 
+<!-- SIDE PANEL -->
+<div id="side-panel" class="side-panel">
+  <div class="side-panel-header">
+    <h3>Settings</h3>
+    <button id="close-panel" class="close-btn">&times;</button>
+  </div>
+  <div class="side-panel-content">
+    <div class="panel-section">
+      <h4>Quick Filters</h4>
+      <div class="filter-option">
+        <label for="panel-brand">Brand:</label>
+        <select id="panel-brand">
+          <option>All</option>
+          <option>Toyota</option>
+          <option>BMW</option>
+          <option>Mercedes</option>
+        </select>
+      </div>
+      <div class="filter-option">
+        <label for="panel-price">Price Range:</label>
+        <select id="panel-price">
+          <option>All</option>
+          <option>Under $30k</option>
+          <option>$30k - $50k</option>
+          <option>Over $50k</option>
+        </select>
+      </div>
+    </div>
+    <div class="panel-section">
+      <h4>Preferences</h4>
+      <div class="preference-option">
+        <input type="checkbox" id="dark-mode">
+        <label for="dark-mode">Dark Mode</label>
+      </div>
+      <div class="preference-option">
+        <input type="checkbox" id="notifications">
+        <label for="notifications">Enable Notifications</label>
+      </div>
+    </div>
+    <div class="panel-section">
+      <h4>Account</h4>
+      <button class="panel-btn">Login</button>
+      <button class="panel-btn">Sign Up</button>
+    </div>
+  </div>
+</div>
+
+<!-- SIDE PANEL TOGGLE -->
+<button id="panel-toggle" class="panel-toggle">
+  <i class="fas fa-cog"></i>
+</button>
+
 <!-- NAVBAR -->
 <header class="navbar">
   <div class="logo-container">
-    <img src="../images/other erny.jpg" class="logo-img">
+    <img src="../images/other erny.jpg" class="logo-img" alt="Erny Auto Group">
     <h2>Erny Auto Group</h2>
   </div>
 
   <ul class="nav-links">
-    <li><a href="#">Home</a></li>
-    <li><a href="#">Buy</a></li>
-    <li><a href="#">Sell</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Booking</a></li>
-    <li><a href="#">FAQs</a></li>
+    <li><a href="index.html" class="nav-link active">Home</a></li>
+    <li><a href="about.html" class="nav-link">About</a></li>
+    <li><a href="buy.html" class="nav-link">Buy</a></li>
+    <li><a href="sell.html" class="nav-link">Sell</a></li>
+    <li><a href="bookings.html" class="nav-link">Bookings</a></li>
+    <li><a href="FAQs.html" class="nav-link">FAQ</a></li>
+    <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+    <li><a href="contact.html" class="nav-link">Contact</a></li>
+    <li><a href="settings.html" class="nav-link">Settings</a></li>
   </ul>
 
   <div class="auth">
-    <a href="#">Login</a>
-    <a href="#" class="signup">Sign Up</a>
+    <a href="login.html">Login</a>
+    <a href="sign up.html" class="signup">Sign Up</a>
+  </div>
+
+  <div class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
   </div>
 </header>
 
 
 <!-- HERO -->
 <section class="hero">
-  <img src="../images/bmw.jpg" class="hero-bg">
+  <img src="../images/bmw.jpg" class="hero-bg" alt="Hero Background">
 
   <div class="hero-content">
     <h1>Find Your Perfect Car</h1>
-    <p>Buy & Sell Cars with Confidence</p>
-    
+    <p>Buy & Sell Cars with Confidence at Erny Auto Group</p>
 
     <div class="search-box">
       <select><option>All Makes</option></select>
@@ -52,6 +112,38 @@
       <select><option>Max Price</option></select>
       <select><option>Location</option></select>
       <button>Search</button>
+    </div>
+
+    <div class="cta-buttons">
+      <a href="buy.html" class="btn-primary">Browse Cars</a>
+      <a href="sell.html" class="btn-secondary">Sell Your Car</a>
+    </div>
+  </div>
+</section>
+
+<!-- SPECIAL OFFERS -->
+<section class="special-offers">
+  <div class="container">
+    <h2>Special Offers</h2>
+    <div class="offers-grid">
+      <div class="offer-card">
+        <img src="../images/ford.jpg" alt="Special Offer 1">
+        <h3>Finance at 0% APR</h3>
+        <p>Get your dream car with zero interest financing for the first 12 months.</p>
+        <a href="#" class="btn-offer">Learn More</a>
+      </div>
+      <div class="offer-card">
+        <img src="../images/img3.jpg" alt="Special Offer 2">
+        <h3>Free Vehicle History Report</h3>
+        <p>Complimentary Carfax report with every purchase.</p>
+        <a href="#" class="btn-offer">Get Report</a>
+      </div>
+      <div class="offer-card">
+        <img src="../images/car photo.jpg" alt="Special Offer 3">
+        <h3>Extended Warranty</h3>
+        <p>Protect your investment with our comprehensive warranty plans.</p>
+        <a href="#" class="btn-offer">View Plans</a>
+      </div>
     </div>
   </div>
 </section>
@@ -62,26 +154,36 @@
     <div class="cars-grid">
       <!-- Car 1 -->
       <div class="car-card">
-        <img src="../images/okayy.jpg" alt="Car 1">
-        <h3>Car Model 1</h3>
-        <p class="price">$25,000</p>
-        <a href="#" class="btn">View Details</a>
+        <img src="../images/okayy.jpg" alt="BMW X5">
+        <h3>BMW X5</h3>
+        <p class="car-price">$45,000</p>
+        <p class="car-desc">Luxury SUV with advanced features and premium comfort.</p>
+        <a href="buy.html" class="btn">View Details</a>
       </div>
       <!-- Car 2 -->
       <div class="car-card">
-        <img src="../images/cadillac.jpg" alt="Car 2">
-        <h3>Car Model 2</h3>
-        <p class="price">$32,500</p>
-        <a href="#" class="btn">View Details</a>
+        <img src="../images/cadillac.jpg" alt="Mercedes C-Class">
+        <h3>Mercedes C-Class</h3>
+        <p class="car-price">$38,500</p>
+        <p class="car-desc">Elegant sedan with cutting-edge technology and safety.</p>
+        <a href="buy.html" class="btn">View Details</a>
       </div>
       <!-- Car 3 -->
       <div class="car-card">
-        <img src="../images/car photo.jpg" alt="Car 3">
-        <h3>Car Model 3</h3>
-        <p class="price">$28,750</p>
-        <a href="#" class="btn">View Details</a>
+        <img src="../images/car photo.jpg21" alt="Audi A4">
+        <h3>Audi A4</h3>
+        <p class="car-price">$35,750</p>
+        <p class="car-desc">Sporty performance with Audi's signature design.</p>
+        <a href="buy.html" class="btn">View Details</a>
       </div>
-      <!-- Add more cars if needed -->
+      <!-- Car 4 -->
+      <div class="car-card">
+        <img src="../images/ford.jpg" alt="Ford Mustang">
+        <h3>Ford Mustang</h3>
+        <p class="car-price">$42,000</p>
+        <p class="car-desc">Iconic American muscle car with modern upgrades.</p>
+        <a href="buy.html" class="btn">View Details</a>
+      </div>
     </div>
   </div>
 </section>
@@ -103,70 +205,94 @@
 
 <!-- WHY CHOOSE US -->
 <section class="why">
-  <h2>Why Choose Us?</h2>
+  <div class="container">
+    <h2>Why Choose Erny Auto Group?</h2>
 
-  <div class="why-container">
+    <div class="why-container">
+      <div class="why-box">
+        <i class="fas fa-shield-halved"></i>
+        <h3>Trusted Sellers</h3>
+        <p>Safe and verified sellers you can trust. All vehicles undergo thorough inspection.</p>
+      </div>
 
-    <div class="why-box">
-      <i class="fa-solid fa-shield-halved"></i>
-      <h3>Trusted Sellers</h3>
-      <p>Safe and verified sellers you can trust.</p>
+      <div class="why-box">
+        <i class="fas fa-money-bill-wave"></i>
+        <h3>Easy Financing</h3>
+        <p>Flexible payment options and competitive financing rates for everyone.</p>
+      </div>
+
+      <div class="why-box">
+        <i class="fas fa-headset"></i>
+        <h3>24/7 Support</h3>
+        <p>Our expert team is always here to help you with any questions or concerns.</p>
+      </div>
+
+      <div class="why-box">
+        <i class="fas fa-tools"></i>
+        <h3>Quality Service</h3>
+        <p>Comprehensive maintenance and repair services to keep your car running smoothly.</p>
+      </div>
     </div>
-
-    <div class="why-box">
-      <i class="fa-solid fa-money-bill-wave"></i>
-      <h3>Easy Financing</h3>
-      <p>Flexible payment options for everyone.</p>
-    </div>
-
-    <div class="why-box">
-      <i class="fa-solid fa-headset"></i>
-      <h3>24/7 Support</h3>
-      <p>We are always here to help you.</p>
-    </div>
-
   </div>
 </section>
 
 
-<!-- REVIEWS -->
-<section class="reviews">
-  <h2>Customer Reviews</h2>
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+  <div class="container">
+    <h2>Customer Testimonials</h2>
 
-  <div class="review-container">
-
-    <div class="review">
-      <h4>Michael R.</h4>
-
-      <!-- ⭐⭐⭐⭐⭐ STARS -->
-      <div class="stars">
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
+    <div class="testimonial-container">
+      <div class="testimonial">
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <p>"Erny Auto Group made buying my first car an amazing experience. The staff was knowledgeable and the process was smooth."</p>
+        <h4>- Michael R.</h4>
       </div>
 
-      <p>Great experience. Excellent service!</p>
-    </div>
-
-    <div class="review">
-      <h4>Sarah L.</h4>
-
-      <div class="stars">
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
+      <div class="testimonial">
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <p>"Highly recommend! I sold my car quickly and got a great price. The team was professional throughout."</p>
+        <h4>- Sarah L.</h4>
       </div>
 
-      <p>Highly recommend. Smooth process!</p>
+      <div class="testimonial">
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <p>"Excellent service! The financing options were flexible, and I found the perfect SUV for my family."</p>
+        <h4>- David M.</h4>
+      </div>
     </div>
-
   </div>
 </section>
 
+<!-- CALL TO ACTION -->
+<section class="cta">
+  <div class="container">
+    <h2>Ready to Find Your Dream Car?</h2>
+    <p>Browse our extensive inventory or contact us to get started today.</p>
+    <div class="cta-buttons">
+      <a href="buy.html" class="btn-primary">Browse Inventory</a>
+      <a href="contact.html" class="btn-secondary">Contact Us</a>
+    </div>
+  </div>
+</section>
 
 <footer class="footer">
 
@@ -184,11 +310,15 @@
     <!-- LINKS -->
     <div class="footer-box">
       <h3>Quick Links</h3>
-      <a href="#">Home</a>
-      <a href="#">Buy</a>
-      <a href="#">Sell</a>
-      <a href="#">Booking</a>
-      <a href="#">FAQs</a>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="buy.html">Buy</a>
+      <a href="sell.html">Sell</a>
+      <a href="bookings.html">Bookings</a>
+      <a href="FAQs.html">FAQs</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="contact.html">Contact</a>
+      <a href="settings.html">Settings</a>
     </div>
 
     <!-- SERVICES -->
@@ -216,3 +346,8 @@
   </div>
 
 </footer>
+
+<script src="../src/script.js"></script>
+
+</body>
+</html>

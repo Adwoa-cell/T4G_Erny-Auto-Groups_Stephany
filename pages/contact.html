@@ -9,26 +9,34 @@
 <body>
 
 <!-- NAVBAR -->
-<header>
-  <nav class="navbar">
-    <img src="../images/other erny.jpg" alt="Logo" class="logo-img-circle">
-    <h2 class="logo-text">ERNY AUTO GROUP</h2>
+<header class="navbar">
+  <div class="logo-container">
+    <img src="../images/other erny.jpg" class="logo-img" alt="Erny Auto Group">
+    <h2>Erny Auto Group</h2>
+  </div>
 
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="sell.html">Sell</a></li>
-      <li><a href="#">Sell</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="buy.html">Buy</a></li>
-       <li><a href="login.html">Login</a></li>
-    </ul>
+  <ul class="nav-links">
+    <li><a href="index.html" class="nav-link">Home</a></li>
+    <li><a href="about.html" class="nav-link">About</a></li>
+    <li><a href="buy.html" class="nav-link">Buy</a></li>
+    <li><a href="sell.html" class="nav-link">Sell</a></li>
+    <li><a href="bookings.html" class="nav-link">Bookings</a></li>
+    <li><a href="FAQs.html" class="nav-link">FAQ</a></li>
+    <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+    <li><a href="settings.html" class="nav-link">Settings</a></li>
+  </ul>
 
-    <div class="auth">
-      <a href="#">Login</a>
-      <a href="#">Sign up</a>
-    </div>
-  </nav>
+  <div class="auth">
+    <a href="login.html">Login</a>
+    <a href="sign up.html" class="signup">Sign Up</a>
+  </div>
+
+  <div class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
 </header>
 
 <!-- HERO SECTION -->
@@ -65,6 +73,127 @@
   </div>
 </section>
 
-<script src="js/script.js"></script>
+<footer class="footer">
+  <div class="footer-container">
+    <!-- LOGO + ABOUT -->
+    <div class="footer-box brand">
+      <div class="footer-logo">
+        <img src="../images/other erny.jpg" alt="logo">
+      </div>
+      <h2>Erny Auto Groups</h2>
+      <p>Your trusted marketplace for buying and selling cars with confidence.</p>
+    </div>
+
+    <!-- LINKS -->
+    <div class="footer-box">
+      <h3>Quick Links</h3>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="buy.html">Buy</a>
+      <a href="sell.html">Sell</a>
+      <a href="bookings.html">Bookings</a>
+      <a href="FAQs.html">FAQs</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="contact.html">Contact</a>
+      <a href="settings.html">Settings</a>
+    </div>
+
+    <!-- SERVICES -->
+    <div class="footer-box">
+      <h3>Services</h3>
+      <a href="#">Car Sales</a>
+      <a href="#">Car Rentals</a>
+      <a href="#">Financing</a>
+      <a href="#">Inspection</a>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="footer-box">
+      <h3>Contact</h3>
+      <p><i class="fa-solid fa-location-dot"></i> Accra, Ghana</p>
+      <p><i class="fa-solid fa-phone"></i> +233 000 000 000</p>
+      <p><i class="fa-solid fa-envelope"></i> info@ernyauto.com</p>
+    </div>
+  </div>
+
+  <!-- BOTTOM -->
+  <div class="footer-bottom">
+    <p>© 2026 Erny Auto Group. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="../src/script.jss"></script>
+
+<!-- SIDE PANEL -->
+<div class="side-panel">
+  <div class="side-panel-header">
+    <h3>Settings & Preferences</h3>
+    <button class="close-btn">&times;</button>
+  </div>
+  <div class="side-panel-content">
+    <div class="panel-section">
+      <h4>Quick Filters</h4>
+      <div class="filter-option">
+        <label for="panel-brand">Brand:</label>
+        <select id="panel-brand">
+          <option value="">All Brands</option>
+          <option value="toyota">Toyota</option>
+          <option value="honda">Honda</option>
+          <option value="bmw">BMW</option>
+          <option value="mercedes">Mercedes</option>
+          <option value="audi">Audi</option>
+        </select>
+      </div>
+      <div class="filter-option">
+        <label for="panel-price">Price Range:</label>
+        <select id="panel-price">
+          <option value="">All Prices</option>
+          <option value="under-20000">Under $20,000</option>
+          <option value="20000-40000">$20,000 - $40,000</option>
+          <option value="40000-60000">$40,000 - $60,000</option>
+          <option value="over-60000">Over $60,000</option>
+        </select>
+      </div>
+      <div class="filter-option">
+        <label for="panel-type">Type:</label>
+        <select id="panel-type">
+          <option value="">All Types</option>
+          <option value="sedan">Sedan</option>
+          <option value="suv">SUV</option>
+          <option value="truck">Truck</option>
+          <option value="coupe">Coupe</option>
+        </select>
+      </div>
+      <button class="panel-btn" id="panel-apply-filters">Apply Filters</button>
+    </div>
+    <div class="panel-section">
+      <h4>Preferences</h4>
+      <div class="preference-option">
+        <input type="checkbox" id="email-notifications">
+        <label for="email-notifications">Email Notifications</label>
+      </div>
+      <div class="preference-option">
+        <input type="checkbox" id="sms-alerts">
+        <label for="sms-alerts">SMS Alerts</label>
+      </div>
+      <div class="preference-option">
+        <input type="checkbox" id="dark-mode">
+        <label for="dark-mode">Dark Mode</label>
+      </div>
+      <button class="panel-btn">Save Preferences</button>
+    </div>
+    <div class="panel-section">
+      <h4>Account</h4>
+      <button class="panel-btn">View Profile</button>
+      <button class="panel-btn">Logout</button>
+    </div>
+  </div>
+</div>
+
+<!-- PANEL TOGGLE BUTTON -->
+<button class="panel-toggle">
+  <i class="fas fa-cog"></i>
+</button>
+
 </body>
 </html>
