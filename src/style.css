@@ -2,24 +2,29 @@
   margin:0;
   padding:0;
   box-sizing:border-box;
-  font-family:Arial;
 }
 
 body{
-  background:#0d0d0d;
-  color:white;
-  padding-top:80px;
+  margin:0;
+  padding:0;
+  background:#f4f6f9;
+  color:#111;
+  font-family:'Roboto', Arial, sans-serif;
 }
 
 /* NAVBAR */
 .navbar{
   position:fixed;
   top:0;
+  left:0;
   width:100%;
+  z-index:1000;
   display:flex;
   justify-content:space-between;
+  align-items:center;
   padding:15px 40px;
-  background:#111;
+  background:rgba(17,17,17,0.82);
+  backdrop-filter:blur(12px);
 }
 
 .logo-img{
@@ -28,23 +33,142 @@ body{
   border-radius:50%;
 }
 
+.logo-container h2 {
+  font-family: 'Playfair Display', serif;
+  color: #f5a623;
+  font-size: 1.5rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-shadow: 0 0 6px rgba(245, 166, 35, 0.8);
+  margin-left: 10px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 /* HERO */
 .hero{
   position:relative;
-  height:90vh;
+  min-height:90vh;
   display:flex;
   justify-content:center;
   align-items:center;
+  text-align:center;
+  padding: 140px 20px 80px;
+  overflow:hidden;
 }
 
 .hero-bg{
   position:absolute;
+  top:0;
+  left:0;
   width:100%;
   height:100%;
   object-fit:cover;
-  filter:brightness(50%);
+  filter:brightness(0.48) contrast(1.05);
+  transform:scale(1.05);
+  transition: transform 0.6s ease;
   z-index:-1;
 }
+
+.hero:hover .hero-bg{
+  transform:scale(1.1);
+}
+
+.hero-content{
+  position:relative;
+  max-width:1000px;
+  margin:0 auto;
+  color:#fff;
+  z-index:1;
+}
+
+.hero-title{
+  font-family:'Playfair Display', serif;
+  font-size:4rem;
+  line-height:1.1;
+  margin-bottom: 16px;
+  font-weight:900;
+  color:#fff;
+  text-shadow: 0 8px 20px rgba(0,0,0,0.35);
+  letter-spacing:0.02em;
+}
+
+.hero-subtitle{
+  font-family:'Dancing Script', cursive;
+  font-size:1.5rem;
+  margin-bottom: 25px;
+  color:#f3e9c9;
+  text-shadow: 0 6px 22px rgba(0,0,0,0.25);
+}
+
+.search-box{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:8px;
+  flex-wrap:wrap;
+  margin:20px auto 30px;
+  max-width:720px;
+}
+
+.search-box input{
+  width:240px;
+  max-width:100%;
+  padding:12px 16px;
+  border:1px solid rgba(255,255,255,0.45);
+  border-radius:999px;
+  background: rgba(255,255,255,0.95);
+  color:#222;
+  font-size:16px;
+}
+
+.search-box button{
+  border:none;
+  padding:12px 24px;
+  border-radius:999px;
+  background:#f5a623;
+  color:#111;
+  font-weight:700;
+  cursor:pointer;
+  box-shadow:0 8px 20px rgba(245,166,35,0.37);
+  transition: transform .22s ease, box-shadow .22s ease;
+}
+
+.search-box button:hover{
+  transform:translateY(-2px);
+  box-shadow:0 10px 24px rgba(245,166,35,0.48);
+}
+
+.cta-buttons a {
+  display:inline-block;
+  margin:0 10px;
+  padding:14px 28px;
+  border-radius:999px;
+  text-decoration:none;
+  font-weight:700;
+  transition:.25s all ease;
+}
+
+.cta-buttons .btn-primary{
+  color:#111;
+  background:#fff;
+}
+
+.cta-buttons .btn-secondary{
+  color:#fff;
+  border:2px solid rgba(255,255,255,0.95);
+  background:transparent;
+}
+
+.cta-buttons a:hover{
+  opacity:.9;
+  transform:translateY(-1px);
+}
+
 /* Featured Cars Section */
 #featured-cars {
   padding: 60px 20px;
@@ -143,24 +267,48 @@ body{
 .why{
   padding:50px;
   text-align:center;
+  background:#fff;
+  color:#1a1a1a;
 }
 
 .why-container{
   display:flex;
   justify-content:center;
   gap:20px;
+  flex-wrap:wrap;
 }
 
 .why-box{
-  background:#1a1a1a;
+  background:#fdfdfd;
+  border:1px solid #e6e6e6;
   padding:20px;
   border-radius:10px;
+  box-shadow:0 10px 20px rgba(0,0,0,0.05);
+  width:230px;
 }
 
 .why-box i{
-  color:red;
+  color:#f5a623;
   font-size:30px;
   margin-bottom:10px;
+}
+
+/* CTA, last section before footer */
+.cta {
+  padding: 60px 20px;
+  background: #1a1c1f;
+  color: #fff;
+  text-align: center;
+}
+
+.cta h2 {
+  margin-bottom: 15px;
+  color: #f5a623;
+}
+
+.cta p {
+  margin-bottom: 30px;
+  font-size: 1.2rem;
 }
 
 /* REVIEWS */
@@ -357,7 +505,10 @@ body{
   color: #fff;
   text-align: center;
 }
-
+.about-highlights {
+  margin-top: 30px;
+  color:white;
+}
 .about-content p,
 .about-more p {
   max-width: 900px;
@@ -1746,7 +1897,12 @@ body{
 .booking-note-dark {
   margin-top: 20px;
   font-size: 14px;
-  color: #ccc;
+  color: #cfcece;
+}
+.booking-info{
+  margin-top: 20px;
+  font-size: 14px;
+  color: #cfcece;
 }
 /* ====== GENERAL STYLING ====== */
 body {
@@ -1788,6 +1944,27 @@ body {
 
 .nav-links li a:hover {
   color: #ff6600;
+}
+
+/* ====== FOOTER BRAND STYLING ====== */
+.footer-box.brand h2 {
+  font-family: 'Playfair Display', serif;
+  color: #f5a623;
+  font-size: 1.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 0;
+  text-shadow: 0 4px 15px rgba(245, 166, 35, 0.4);
+}
+
+.footer-box.brand h2:hover {
+  transform: scale(1.02);
+  color: #ffd17b;
+}
+
+.footer-box.brand p {
+  color: #ddd;
 }
 
 /* ====== FAQ STYLING ====== */
