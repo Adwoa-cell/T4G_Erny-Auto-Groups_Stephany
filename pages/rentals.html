@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Car Rentals - Erny Auto Groups</title>
+<link rel="stylesheet" href="../src/style.css">
+</head>
+<body>
+
+<!-- SIDE PANEL -->
+<div id="side-panel" class="side-panel">
+  <div class="side-panel-header">
+    <h3>Settings</h3>
+    <button id="close-panel" class="close-btn">&times;</button>
+  </div>
+  <div class="side-panel-content">
+    <div class="panel-section">
+      <h4>Quick Filters</h4>
+      <div class="filter-option">
+        <label for="panel-type">Car Type:</label>
+        <select id="panel-type">
+          <option>All</option>
+          <option>Sedan</option>
+          <option>SUV</option>
+          <option>Luxury</option>
+          <option>Sports</option>
+        </select>
+      </div>
+      <div class="filter-option">
+        <label for="panel-duration">Duration:</label>
+        <select id="panel-duration">
+          <option>All</option>
+          <option>Daily</option>
+          <option>Weekly</option>
+          <option>Monthly</option>
+        </select>
+      </div>
+    </div>
+    <div class="panel-section">
+      <h4>Preferences</h4>
+      <div class="preference-option">
+        <input type="checkbox" id="insurance">
+        <label for="insurance">Include Insurance</label>
+      </div>
+      <div class="preference-option">
+        <input type="checkbox" id="gps">
+        <label for="gps">GPS Navigation</label>
+      </div>
+    </div>
+    <div class="panel-section">
+      <h4>Account</h4>
+      <button class="panel-btn">Login</button>
+      <button class="panel-btn">Sign Up</button>
+    </div>
+  </div>
+</div>
+
+<!-- SIDE PANEL TOGGLE -->
+<button id="panel-toggle" class="panel-toggle">
+  <i class="fas fa-cog"></i>
+</button>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="logo-container">
+    <img src="../images/other erny.jpg" class="logo-img" alt="Erny Auto Groups">
+    <h2>Erny Auto Groups</h2>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="index.html" class="nav-link">Home</a></li>
+    <li><a href="about.html" class="nav-link">About</a></li>
+    <li><a href="buy.html" class="nav-link">Buy</a></li>
+    <li><a href="rentals.html" class="nav-link active">Rentals</a></li>
+    <li><a href="sell.html" class="nav-link">Sell</a></li>
+    <li><a href="bookings.html" class="nav-link">Bookings</a></li>
+    <li><a href="FAQs.html" class="nav-link">FAQ</a></li>
+    <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+    <li><a href="contact.html" class="nav-link">Contact</a></li>
+    <li><a href="settings.html" class="nav-link">Settings</a></li>
+    <li><a href="terms.html" class="nav-link">Terms</a></li>
+  </ul>
+
+  <div class="auth">
+    <a href="login.html">Login</a>
+    <a href="sign up.html" class="signup">Sign Up</a>
+  </div>
+
+  <div class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <img src="../images/campbell-3ZUsNJhi_Ik-unsplash.jpg" class="hero-bg hero-bg-1" alt="Campbell Car Background">
+  <img src="../images/d-panyukov-DwxlhTvC16Q-unsplash.jpg" class="hero-bg hero-bg-2" alt="D Panyukov Car Background">
+  <img src="../images/dhiva-krishna-YApS6TjKJ9c-unsplash.jpg" class="hero-bg hero-bg-3" alt="Dhiva Krishna Car Background">
+  <img src="../images/evgeny-tchebotarev-aiwuLjLPFnU-unsplash.jpg" class="hero-bg hero-bg-4" alt="Evgeny Tchebotarev Car Background">
+  <img src="../images/hakon-sataoen-qyfco1nfMtg-unsplash.jpg" class="hero-bg hero-bg-5" alt="Hakon Sataoen Car Background">
+  <img src="../images/kenny-eliason-FcyipqujfGg-unsplash.jpg" class="hero-bg hero-bg-6" alt="Kenny Eliason Car Background">
+  <img src="../images/olav-tvedt-6lSBynPRaAQ-unsplash.jpg" class="hero-bg hero-bg-7" alt="Olav Tvedt Car Background">
+  <img src="../images/peter-broomfield-m3m-lnR90uM-unsplash.jpg" class="hero-bg hero-bg-8" alt="Peter Broomfield Car Background">
+
+  <div class="hero-content">
+    <h1 class="hero-title">Car Rentals</h1>
+    <p class="hero-subtitle">Drive the car of your dreams with our premium rental service</p>
+    <a href="#fleet" class="cta-button">View Fleet</a>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="why-choose animate-fade-in">
+  <div class="container">
+    <h2 class="section-title text-center">Why Choose Our Rentals?</h2>
+    <p class="section-subtitle text-center">Experience premium car rental service with unbeatable quality and convenience</p>
+    <div class="features-grid">
+      <div class="feature-card">
+        <i class="fas fa-car"></i>
+        <h3>Premium Fleet</h3>
+        <p>Latest models from top brands, well-maintained and insured.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-dollar-sign"></i>
+        <h3>Competitive Pricing</h3>
+        <p>Affordable rates with no hidden fees or surprise charges.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-clock"></i>
+        <h3>24/7 Support</h3>
+        <p>Round-the-clock assistance for any issues during your rental.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-map-marker-alt"></i>
+        <h3>Flexible Pickup</h3>
+        <p>Convenient locations and delivery options available.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-shield-alt"></i>
+        <h3>Full Insurance</h3>
+        <p>Comprehensive coverage for peace of mind.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-tools"></i>
+        <h3>Maintenance Included</h3>
+        <p>All servicing and repairs covered during rental period.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AVAILABLE FLEET -->
+<section id="fleet" class="car-listings animate-fade-in-delay-1">
+  <div class="container">
+    <h2 class="section-title text-center">Available Fleet</h2>
+    <p class="section-subtitle text-center">Choose from our diverse collection of premium vehicles</p>
+    <div class="cars-grid">
+      <!-- Car 1 -->
+      <div class="car-card" data-type="Luxury">
+        <div class="car-img-wrapper">
+          <img src="../images/cadillac.jpg" alt="Cadillac Escalade">
+          <div class="car-overlay">
+            <p class="car-price">From $99/day</p>
+          </div>
+        </div>
+        <div class="car-info">
+          <h3>Cadillac Escalade</h3>
+          <p>Luxury SUV • 7 Seats • GPS • Leather</p>
+          <button class="rent-btn">Rent Now</button>
+        </div>
+      </div>
+
+      <!-- Car 2 -->
+      <div class="car-card" data-type="Sedan">
+        <div class="car-img-wrapper">
+          <img src="../images/bmw.jpg" alt="BMW 5 Series">
+          <div class="car-overlay">
+            <p class="car-price">From $79/day</p>
+          </div>
+        </div>
+        <div class="car-info">
+          <h3>BMW 5 Series</h3>
+          <p>Executive Sedan • 5 Seats • Premium Audio</p>
+          <button class="rent-btn">Rent Now</button>
+        </div>
+      </div>
+
+      <!-- Car 3 -->
+      <div class="car-card" data-type="SUV">
+        <div class="car-img-wrapper">
+          <img src="../images/ford.jpg" alt="Ford Explorer">
+          <div class="car-overlay">
+            <p class="car-price">From $69/day</p>
+          </div>
+        </div>
+        <div class="car-info">
+          <h3>Ford Explorer</h3>
+          <p>Family SUV • 7 Seats • All-Wheel Drive</p>
+          <button class="rent-btn">Rent Now</button>
+        </div>
+      </div>
+
+      <!-- Car 4 -->
+      <div class="car-card" data-type="Sports">
+        <div class="car-img-wrapper">
+          <img src="../images/2022-cadillac-ct5-v-blackwing-1-1628524481.jpeg" alt="Cadillac CT5-V">
+          <div class="car-overlay">
+            <p class="car-price">From $149/day</p>
+          </div>
+        </div>
+        <div class="car-info">
+          <h3>Cadillac CT5-V Blackwing</h3>
+          <p>High-Performance Sedan • 4 Seats • 668 HP</p>
+          <button class="rent-btn">Rent Now</button>
+        </div>
+      </div>
+
+      <!-- Car 5 -->
+      <div class="car-card" data-type="Luxury">
+        <div class="car-img-wrapper">
+          <img src="../images/2025-mercedes-amg-s63-e-performance-101-67d450db7d124.jpeg" alt="Mercedes AMG S63">
+          <div class="car-overlay">
+            <p class="car-price">From $199/day</p>
+          </div>
+        </div>
+        <div class="car-info">
+          <h3>Mercedes AMG S63 E-Performance</h3>
+          <p>Ultra-Luxury Sedan • 5 Seats • Hybrid Power</p>
+          <button class="rent-btn">Rent Now</button>
+        </div>
+      </div>
+
+      <!-- Car 6 -->
+      <div class="car-card" data-type="SUV">
+        <div class="car-img-wrapper">
+          <img src="../images/evgeny-tchebotarev-aiwuLjLPFnU-unsplash.jpg" alt="Luxury SUV">
+          <div class="car-overlay">
+            <p class="car-price">From $89/day</p>
+          </div>
+        </div>
+        <div class="car-info">
+          <h3>Luxury SUV</h3>
+          <p>Premium SUV • 5 Seats • Advanced Safety</p>
+          <button class="rent-btn">Rent Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing animate-fade-in-delay-2">
+  <div class="container">
+    <h2 class="section-title text-center">Rental Pricing</h2>
+    <p class="section-subtitle text-center">Flexible pricing options to suit your needs and budget</p>
+    <div class="pricing-grid">
+      <div class="pricing-card">
+        <h3>Daily Rate</h3>
+        <p class="price">$49 - $199</p>
+        <p>Per day rental with unlimited mileage</p>
+        <ul>
+          <li>Free delivery & pickup</li>
+          <li>24/7 roadside assistance</li>
+          <li>Basic insurance included</li>
+        </ul>
+      </div>
+      <div class="pricing-card featured">
+        <h3>Weekly Rate</h3>
+        <p class="price">$299 - $999</p>
+        <p>7-day rental with special discounts</p>
+        <ul>
+          <li>10% discount on daily rate</li>
+          <li>Free GPS & child seats</li>
+          <li>Premium insurance upgrade</li>
+        </ul>
+      </div>
+      <div class="pricing-card">
+        <h3>Monthly Rate</h3>
+        <p class="price">$999 - $2999</p>
+        <p>30-day rental for long-term needs</p>
+        <ul>
+          <li>25% discount on daily rate</li>
+          <li>All extras included</li>
+          <li>Flexible terms</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how-it-works">
+  <div class="container">
+    <h2 class="section-title text-center">How to Rent a Car</h2>
+    <p class="section-subtitle text-center">Simple 4-step process to get you on the road quickly</p>
+    <div class="steps-grid">
+      <div class="step">
+        <div class="step-number">1</div>
+        <h3>Choose Your Car</h3>
+        <p>Browse our fleet and select the perfect vehicle for your needs.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">2</div>
+        <h3>Book Online</h3>
+        <p>Reserve your car instantly through our website or app.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">3</div>
+        <h3>Pick Up</h3>
+        <p>Collect your vehicle from our location or arrange delivery.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">4</div>
+        <h3>Enjoy Your Drive</h3>
+        <p>Drive with confidence knowing you're fully covered.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+  <div class="container">
+    <h2 class="section-title text-center">What Our Customers Say</h2>
+    <p class="section-subtitle text-center">Hear from satisfied customers about their rental experience</p>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <p>"Excellent service! The car was immaculate and the rental process was seamless."</p>
+        <cite>- Sarah Johnson</cite>
+      </div>
+      <div class="testimonial-card">
+        <p>"Great value for money. Will definitely rent again for my next trip."</p>
+        <cite>- Michael Chen</cite>
+      </div>
+      <div class="testimonial-card">
+        <p>"Professional staff and well-maintained vehicles. Highly recommended!"</p>
+        <cite>- Emma Davis</cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-section">
+        <div class="footer-logo">
+          <img src="../images/other erny.jpg" alt="Erny Auto Groups">
+        </div>
+        <p>Your trusted partner for car sales and rentals.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="buy.html">Buy</a></li>
+          <li><a href="rentals.html">Rentals</a></li>
+          <li><a href="sell.html">Sell</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Contact Info</h4>
+        <p>Phone: (555) 123-4567</p>
+        <p>Email: info@ernyautogroups.com</p>
+        <p>Address: 123 Auto Street, City, State 12345</p>
+      </div>
+      <div class="footer-section">
+        <h4>Follow Us</h4>
+        <div class="social-links">
+          <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Erny Auto Groups. All rights reserved. | <a href="terms.html">Terms of Service</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="../src/script.jss"></script>
+</body>
+</html></content>
+<parameter name="filePath">c:\Users\HP\Desktop\T4G_Erny Auto Groups_Stephany\pages\rentals.html
