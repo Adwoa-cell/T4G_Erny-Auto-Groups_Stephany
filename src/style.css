@@ -1,211 +1,263 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial;
+}
+
+body{
+  background:#0d0d0d;
+  color:white;
+  padding-top:80px;
 }
 
 /* NAVBAR */
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 15px 50px;
-  background-color: rgba(0,0,0,0.7); /* semi-transparent */
-  color: #fff;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 10;
+.navbar{
+  position:fixed;
+  top:0;
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  padding:15px 40px;
+  background:#111;
 }
 
-.navbar ul {
-  list-style: none;
-  display: flex;
-  gap: 25px;
+.logo-img{
+  width:40px;
+  height:40px;
+  border-radius:50%;
 }
 
-.navbar ul li a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
+/* HERO */
+.hero{
+  position:relative;
+  height:90vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
 }
 
-.auth a {
-  margin-left: 15px;
-  color: #fff;
-  text-decoration: none;
+.hero-bg{
+  position:absolute;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  filter:brightness(50%);
+  z-index:-1;
 }
-
-.logo-img {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%; /* circular logo */
-  margin-right: 10px;
-}
-
-.logo-text {
-  display: inline-block;
-  font-size: 24px;
-  font-weight: bold;
-  color: #fff;
-}
-
-/* HERO SECTION */
-.hero {
-  position: relative;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* Featured Cars Section */
+#featured-cars {
+  padding: 60px 20px;
+  background-color: #f8f8f8; /* Light background, change to dark if homepage is dark */
   text-align: center;
-  overflow: hidden;
 }
 
-.hero-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 0;
-}
-
-.hero-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,0.5);
-  z-index: 1;
-}
-
-.hero-text {
-  position: relative;
-  z-index: 2;
-  color: #fff;
-}
-
-.hero-text h1 {
-  font-size: 60px;
-  margin-bottom: 20px;
-}
-
-.hero-text p {
-  font-size: 24px;
-  margin-bottom: 30px;
-}
-
-.hero-buttons {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-}
-
-.btn {
-  padding: 15px 30px;
-  font-size: 18px;
-  background-color: #ff4d4d;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 30px;
-  transition: 0.3s;
-}
-
-.btn:hover {
-  background-color: #e60000;
-}
-
-.btn-outline {
-  background-color: transparent;
-  border: 2px solid #ff4d4d;
-}
-
-.btn-outline:hover {
-  background-color: #ff4d4d;
-  color: #fff;
-}
-
-/* SEARCH BAR */
-.search {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin: 30px 0;
-  padding-top: 20px;
-}
-
-.search button {
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-/* FEATURED CARS - Dark Background */
-.featured {
-  padding: 50px;
-  text-align: center;
-  background-color: #1a1a1a; /* dark background */
-  color: #fff;
-}
-
-.featured h2 {
-  font-size: 36px;
+#featured-cars .section-title {
+  font-size: 2.5rem;
   margin-bottom: 40px;
+  color: #222;
+  font-weight: bold;
 }
 
-.cars {
+.cars-grid {
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
   justify-content: center;
-  flex-wrap: wrap; /* allow cards to fill page and wrap */
-  gap: 20px;
-  margin-top: 25px;
 }
 
-.cars img {
+.car-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  overflow: hidden;
   width: 300px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.5); /* pop against dark bg */
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.cars img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 5px 20px rgba(0,0,0,0.7);
+.car-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s;
 }
 
-/* WHY CHOOSE US - Darker Shade for Contrast */
-.why {
-  padding: 50px;
-  text-align: center;
-  background-color: #111; /* dark but different from featured */
+.car-card h3 {
+  font-size: 1.3rem;
+  margin: 15px 0 5px 0;
+  color: #111;
+}
+
+.car-card .price {
+  color: #ff4d4d; /* Highlight price in red */
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.car-card .btn {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background-color: #222;
   color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s;
 }
 
-.why h2 {
-  font-size: 36px;
-  margin-bottom: 40px;
+.car-card .btn:hover {
+  background-color: #ff4d4d;
 }
 
-.reasons {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 40px;
-  margin-top: 25px;
+.car-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.2);
 }
 
-.reasons div {
-  background-color: #1a1a1a;
-  padding: 20px 30px;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.5);
-  min-width: 180px;
-  text-align: center;
+@media screen and (max-width: 900px) {
+  .cars-grid {
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .cars-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.search-box{
+  margin-top:20px;
+}
+
+/* FILTERS */
+.filters{
+  background:#eee;
+  color:black;
+  padding:40px;
+  text-align:center;
+}
+
+/* WHY */
+.why{
+  padding:50px;
+  text-align:center;
+}
+
+.why-container{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+}
+
+.why-box{
+  background:#1a1a1a;
+  padding:20px;
+  border-radius:10px;
+}
+
+.why-box i{
+  color:red;
+  font-size:30px;
+  margin-bottom:10px;
+}
+
+/* REVIEWS */
+.reviews{
+  background:#eee;
+  color:black;
+  padding:40px;
+  text-align:center;
+}
+
+.review{
+  background:white;
+  padding:20px;
+  border-radius:10px;
+}
+
+/* ⭐ STARS */
+.stars{
+  color:gold;
+  font-size:20px;
+  margin:10px 0;
+}
+
+/* FOOTER */
+.footer{
+  background:#0a0a0a;
+  color:#ccc;
+  padding:60px 20px 20px;
+}
+
+.footer-container{
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:40px;
+}
+
+/* BRAND SECTION */
+.footer-box{
+  flex:1;
+  min-width:220px;
+}
+
+.footer-box h3{
+  color:white;
+  margin-bottom:15px;
+}
+
+.footer-box p{
+  margin:8px 0;
+  font-size:14px;
+}
+
+/* LOGO CIRCLE */
+.footer-logo{
+  width:60px;
+  height:60px;
+  border-radius:50%;
+  overflow:hidden;
+  margin-bottom:10px;
+  border:2px solid red;
+}
+
+.footer-logo img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+/* LINKS */
+.footer-box a{
+  display:block;
+  text-decoration:none;
+  color:#aaa;
+  margin:6px 0;
+  transition:0.3s;
+}
+
+.footer-box a:hover{
+  color:red;
+  padding-left:5px;
+}
+
+/* ICONS */
+.footer-box i{
+  margin-right:8px;
+  color:red;
+}
+
+/* BOTTOM */
+.footer-bottom{
+  text-align:center;
+  margin-top:40px;
+  padding-top:15px;
+  border-top:1px solid #222;
+  font-size:14px;
+  color:#777;
 }
 /* ABOUT HERO SECTION WITH BACKGROUND IMAGE */
 .about-hero {

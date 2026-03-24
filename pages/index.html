@@ -4,81 +4,215 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Erny Auto Group</title>
+
 <link rel="stylesheet" href="../src/style.css">
+
+<!-- ✅ THIS IS THE CORRECT FONT AWESOME LINK -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
+
 <body>
 
 <!-- NAVBAR -->
-<header>
-  <nav class="navbar">
-    <!-- meduim circular logo -->
-    <img src="../images/other erny.jpg" alt="Logo" class="logo-img">
-    <h2 class="logo-text">ERNY Auto Groups</h2>
+<header class="navbar">
+  <div class="logo-container">
+    <img src="../images/other erny.jpg" class="logo-img">
+    <h2>Erny Auto Group</h2>
+  </div>
 
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="sell.html">Sell</a></li>
-      <li><a href="#">Sell</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="buy.html">Buy</a></li>
-       <li><a href="login.html">Login</a></li>
-    </ul>
+  <ul class="nav-links">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Buy</a></li>
+    <li><a href="#">Sell</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Booking</a></li>
+    <li><a href="#">FAQs</a></li>
+  </ul>
 
-    <div class="auth">
-      <a href="#">Login</a>
-      <a href="#">Sign up</a>
-    </div>
-  </nav>
+  <div class="auth">
+    <a href="#">Login</a>
+    <a href="#" class="signup">Sign Up</a>
+  </div>
 </header>
 
-<!-- HERO SECTION -->
+
+<!-- HERO -->
 <section class="hero">
-  <!-- Background image directly in HTML -->
-  <img src="../images/bmw.jpg" alt="Hero Background" class="hero-bg">
+  <img src="../images/bmw.jpg" class="hero-bg">
 
-  <!-- Overlay -->
-  <div class="hero-overlay"></div>
-
-  <!-- Hero text -->
-  <div class="hero-text">
+  <div class="hero-content">
     <h1>Find Your Perfect Car</h1>
-    <p>Buy, Sell, and Rent with confidence</p>
-    <div class="hero-buttons">
-      <a href="listings.html" class="btn">View Cars</a>
-      <a href="#" class="btn btn-outline">Book Now</a>
+    <p>Buy & Sell Cars with Confidence</p>
+    
+
+    <div class="search-box">
+      <select><option>All Makes</option></select>
+      <select><option>Any Model</option></select>
+      <select><option>Max Price</option></select>
+      <select><option>Location</option></select>
+      <button>Search</button>
+    </div>
+  </div>
+</section>
+<!-- Featured Cars Section -->
+<section id="featured-cars">
+  <div class="container">
+    <h2 class="section-title">Featured Cars</h2>
+    <div class="cars-grid">
+      <!-- Car 1 -->
+      <div class="car-card">
+        <img src="../images/okayy.jpg" alt="Car 1">
+        <h3>Car Model 1</h3>
+        <p class="price">$25,000</p>
+        <a href="#" class="btn">View Details</a>
+      </div>
+      <!-- Car 2 -->
+      <div class="car-card">
+        <img src="../images/cadillac.jpg" alt="Car 2">
+        <h3>Car Model 2</h3>
+        <p class="price">$32,500</p>
+        <a href="#" class="btn">View Details</a>
+      </div>
+      <!-- Car 3 -->
+      <div class="car-card">
+        <img src="../images/car photo.jpg" alt="Car 3">
+        <h3>Car Model 3</h3>
+        <p class="price">$28,750</p>
+        <a href="#" class="btn">View Details</a>
+      </div>
+      <!-- Add more cars if needed -->
     </div>
   </div>
 </section>
 
-<!-- SEARCH BAR -->
-<section class="search">
-  <button>Make</button>
-  <button>Model</button>
-  <button>Year</button>
-</section>
 
-<!-- FEATURED CARS -->
-<section class="featured">
-  <h2>Featured Listings</h2>
-  <div class="cars">
-    <img src="../images/cadillac.jpg" alt="Car 1">
-    <img src="../images/okayy.jpg" alt="Car 2">
-    <img src="../images/2025-mercedes-amg-s63-e-performance-101-67d450db7d124.jpeg" alt="Car 3">
+<!-- ADVANCED FILTER -->
+<section class="filters">
+  <h2>Advanced Filters</h2>
+
+  <div class="filter-box">
+    <select><option>Year</option></select>
+    <select><option>Mileage</option></select>
+    <select><option>Transmission</option></select>
+    <select><option>Fuel Type</option></select>
+    <button>Apply Filters</button>
   </div>
 </section>
+
 
 <!-- WHY CHOOSE US -->
 <section class="why">
   <h2>Why Choose Us?</h2>
-  <div class="reasons">
-    <div>Trusted Sellers</div>
-    <div>24/7 Support</div>
-    <div>Easy Financing</div>
-    <div>Safe Delivery</div>
+
+  <div class="why-container">
+
+    <div class="why-box">
+      <i class="fa-solid fa-shield-halved"></i>
+      <h3>Trusted Sellers</h3>
+      <p>Safe and verified sellers you can trust.</p>
+    </div>
+
+    <div class="why-box">
+      <i class="fa-solid fa-money-bill-wave"></i>
+      <h3>Easy Financing</h3>
+      <p>Flexible payment options for everyone.</p>
+    </div>
+
+    <div class="why-box">
+      <i class="fa-solid fa-headset"></i>
+      <h3>24/7 Support</h3>
+      <p>We are always here to help you.</p>
+    </div>
+
   </div>
 </section>
 
-<script src="../src/script.jss"></script>
-</body>
-</html>
+
+<!-- REVIEWS -->
+<section class="reviews">
+  <h2>Customer Reviews</h2>
+
+  <div class="review-container">
+
+    <div class="review">
+      <h4>Michael R.</h4>
+
+      <!-- ⭐⭐⭐⭐⭐ STARS -->
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+
+      <p>Great experience. Excellent service!</p>
+    </div>
+
+    <div class="review">
+      <h4>Sarah L.</h4>
+
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+
+      <p>Highly recommend. Smooth process!</p>
+    </div>
+
+  </div>
+</section>
+
+
+<footer class="footer">
+
+  <div class="footer-container">
+
+    <!-- LOGO + ABOUT -->
+    <div class="footer-box brand">
+      <div class="footer-logo">
+        <img src="../images/other erny.jpg" alt="logo">
+      </div>
+      <h2>Erny Auto Groups</h2>
+      <p>Your trusted marketplace for buying and selling cars with confidence.</p>
+    </div>
+
+    <!-- LINKS -->
+    <div class="footer-box">
+      <h3>Quick Links</h3>
+      <a href="#">Home</a>
+      <a href="#">Buy</a>
+      <a href="#">Sell</a>
+      <a href="#">Booking</a>
+      <a href="#">FAQs</a>
+    </div>
+
+    <!-- SERVICES -->
+    <div class="footer-box">
+      <h3>Services</h3>
+      <a href="#">Car Sales</a>
+      <a href="#">Car Rentals</a>
+      <a href="#">Financing</a>
+      <a href="#">Inspection</a>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="footer-box">
+      <h3>Contact</h3>
+      <p><i class="fa-solid fa-location-dot"></i> Accra, Ghana</p>
+      <p><i class="fa-solid fa-phone"></i> +233 000 000 000</p>
+      <p><i class="fa-solid fa-envelope"></i> info@ernyauto.com</p>
+    </div>
+
+  </div>
+
+  <!-- BOTTOM -->
+  <div class="footer-bottom">
+    <p>© 2026 Erny Auto Group. All rights reserved.</p>
+  </div>
+
+</footer>
