@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact Us - Erny Auto Groups</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link rel="stylesheet" href="../src/style.css">
 </head>
 <body>
@@ -66,6 +67,17 @@
       <input type="text" name="name" placeholder="Your Name" required>
       <input type="email" name="email" placeholder="Your Email" required>
       <input type="text" name="phone" placeholder="Phone Number" required>
+      <select name="subject" required>
+        <option value="">Select Subject</option>
+        <option value="general-inquiry">General Inquiry</option>
+        <option value="car-purchase">Car Purchase</option>
+        <option value="car-rental">Car Rental</option>
+        <option value="car-selling">Sell Your Car</option>
+        <option value="financing">Financing Questions</option>
+        <option value="complaint">File a Complaint</option>
+        <option value="feedback">Feedback</option>
+        <option value="other">Other</option>
+      </select>
       <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
       <button type="submit">Send Message</button>
     </form>
@@ -121,6 +133,17 @@
       <p><i class="fa-solid fa-location-dot"></i> Accra, Ghana</p>
       <p><i class="fa-solid fa-phone"></i> +233 000 000 000</p>
       <p><i class="fa-solid fa-envelope"></i> info@ernyauto.com</p>
+    </div>
+
+    <!-- SOCIAL MEDIA -->
+    <div class="footer-box">
+      <h3>Connect With Us</h3>
+      <div class="social-links">
+        <a href="https://wa.me/233530219886" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://snapchat.com/t/LIMGPST3" target="_blank" title="Snapchat"><i class="fab fa-snapchat"></i></a>
+        <a href="https://linkedin.com/in/steph-annie" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://t.me/steph_Annny" target="_blank" title="Telegram"><i class="fab fa-telegram"></i></a>
+      </div>
     </div>
   </div>
 
@@ -197,11 +220,6 @@
     </div>
   </div>
 </div>
-
-<!-- PANEL TOGGLE BUTTON -->
-<button class="panel-toggle">
-  <i class="fas fa-cog"></i>
-</button>
 
 </body>
 </html>

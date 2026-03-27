@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Buy Cars - Erny Auto Group</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link rel="stylesheet" href="../src/style.css">
 </head>
 <body>
@@ -53,11 +54,6 @@
     </div>
   </div>
 </div>
-
-<!-- SIDE PANEL TOGGLE -->
-<button id="panel-toggle" class="panel-toggle">
-  <i class="fas fa-cog"></i>
-</button>
 
 <!-- NAVBAR -->
 <header class="navbar">
@@ -112,27 +108,37 @@
     <div class="filters">
       <select id="brand-filter">
         <option value="">All Brands</option>
-        <option>Toyota</option>
-        <option>BMW</option>
-        <option>Mercedes</option>
-        <option>Audi</option>
-        <option>Ford</option>
-        <option>Honda</option>
+        <option value="toyota">Toyota</option>
+        <option value="bmw">BMW</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+        <option value="ford">Ford</option>
+        <option value="honda">Honda</option>
+        <option value="tesla">Tesla</option>
+        <option value="chevrolet">Chevrolet</option>
       </select>
       <select id="price-filter">
         <option value="">All Prices</option>
-        <option>Under $20,000</option>
-        <option>$20,000 - $40,000</option>
-        <option>$40,000 - $60,000</option>
-        <option>Over $60,000</option>
+        <option value="under-20000">Under $20,000</option>
+        <option value="20000-40000">$20,000 - $40,000</option>
+        <option value="40000-60000">$40,000 - $60,000</option>
+        <option value="60000-80000">$60,000 - $80,000</option>
+        <option value="over-80000">Over $80,000</option>
       </select>
       <select id="type-filter">
         <option value="">All Types</option>
-        <option>Sedan</option>
-        <option>SUV</option>
-        <option>Truck</option>
-        <option>Sports Car</option>
-        <option>Luxury</option>
+        <option value="sedan">Sedan</option>
+        <option value="suv">SUV</option>
+        <option value="truck">Truck</option>
+        <option value="sports-car">Sports Car</option>
+        <option value="luxury">Luxury</option>
+        <option value="coupe">Coupe</option>
+      </select>
+      <select id="condition-filter">
+        <option value="">All Conditions</option>
+        <option value="new">New</option>
+        <option value="certified">Certified Pre-Owned</option>
+        <option value="used">Used</option>
       </select>
       <button id="apply-filters">Apply Filters</button>
     </div>
@@ -305,6 +311,17 @@
       <p><i class="fa-solid fa-location-dot"></i> Accra, Ghana</p>
       <p><i class="fa-solid fa-phone"></i> +233 000 000 000</p>
       <p><i class="fa-solid fa-envelope"></i> info@ernyauto.com</p>
+    </div>
+
+    <!-- SOCIAL MEDIA -->
+    <div class="footer-box">
+      <h3>Connect With Us</h3>
+      <div class="social-links">
+        <a href="https://wa.me/233530219886" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://snapchat.com/t/LIMGPST3" target="_blank" title="Snapchat"><i class="fab fa-snapchat"></i></a>
+        <a href="https://linkedin.com/in/steph-annie" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://t.me/steph_Annny" target="_blank" title="Telegram"><i class="fab fa-telegram"></i></a>
+      </div>
     </div>
   </div>
 

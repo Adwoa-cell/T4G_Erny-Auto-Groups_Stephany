@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Book a Car - Any Auto Group</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link rel="stylesheet" href="../src/style.css">
 </head>
 <body>
@@ -50,9 +51,38 @@
       <input type="text" name="name" placeholder="Full Name" required>
       <input type="email" name="email" placeholder="Email" required>
       <input type="tel" name="phone" placeholder="Phone Number" required>
-      <input type="text" name="car" placeholder="Car Model" required>
+      <select name="car" required>
+        <option value="">Select Car Model</option>
+        <option value="BMW X5">BMW X5</option>
+        <option value="Mercedes C-Class">Mercedes C-Class</option>
+        <option value="Audi A4">Audi A4</option>
+        <option value="Ford Mustang">Ford Mustang</option>
+        <option value="Toyota Camry">Toyota Camry</option>
+        <option value="Honda Accord">Honda Accord</option>
+        <option value="Tesla Model 3">Tesla Model 3</option>
+      </select>
+      <select name="duration" required>
+        <option value="">Rental Duration</option>
+        <option value="1-day">1 Day</option>
+        <option value="3-days">3 Days</option>
+        <option value="1-week">1 Week</option>
+        <option value="2-weeks">2 Weeks</option>
+        <option value="1-month">1 Month</option>
+      </select>
       <input type="date" name="date" required>
-      <input type="time" name="time" required>
+      <select name="time" required>
+        <option value="">Pickup Time</option>
+        <option value="08:00">08:00 AM</option>
+        <option value="09:00">09:00 AM</option>
+        <option value="10:00">10:00 AM</option>
+        <option value="11:00">11:00 AM</option>
+        <option value="12:00">12:00 PM</option>
+        <option value="13:00">01:00 PM</option>
+        <option value="14:00">02:00 PM</option>
+        <option value="15:00">03:00 PM</option>
+        <option value="16:00">04:00 PM</option>
+        <option value="17:00">05:00 PM</option>
+      </select>
       <button type="submit">Book Now</button>
     </form>
     <p class="booking-note-dark">We will contact you to confirm your booking.</p>
@@ -99,6 +129,17 @@
       <p><i class="fa-solid fa-location-dot"></i> Accra, Ghana</p>
       <p><i class="fa-solid fa-phone"></i> +233 000 000 000</p>
       <p><i class="fa-solid fa-envelope"></i> info@ernyauto.com</p>
+    </div>
+
+    <!-- SOCIAL MEDIA -->
+    <div class="footer-box">
+      <h3>Connect With Us</h3>
+      <div class="social-links">
+        <a href="https://wa.me/233530219886" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://snapchat.com/t/LIMGPST3" target="_blank" title="Snapchat"><i class="fab fa-snapchat"></i></a>
+        <a href="https://linkedin.com/in/steph-annie" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://t.me/steph_Annny" target="_blank" title="Telegram"><i class="fab fa-telegram"></i></a>
+      </div>
     </div>
   </div>
 
@@ -175,11 +216,6 @@
     </div>
   </div>
 </div>
-
-<!-- PANEL TOGGLE BUTTON -->
-<button class="panel-toggle">
-  <i class="fas fa-cog"></i>
-</button>
 
 </body>
 </html>
