@@ -2788,7 +2788,22 @@ footer a:hover {
 .animate-fade-in-delay-2 {
   animation: fadeIn 1s ease-out 0.4s both;
 }
+/* ===== NAVBAR FINAL FIX (ADD THIS AT THE END) ===== */
 
+.navbar {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 70px;
+  z-index: 9999 !important;
+  background: #111 !important;
+}
+
+/* Push page down so navbar doesn't cover content */
+body {
+  padding-top: 70px;
+}
 
 
 
